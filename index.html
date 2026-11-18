@@ -180,6 +180,15 @@ main{padding-block:28px 48px;padding-left:clamp(16px,3vw,36px);padding-right:max
 }
 @media (min-width:821px){.sidetop{display:contents}}
 @media (prefers-reduced-motion:no-preference){.kpi .fill,.hbar .f,.prog div{transition:width .8s ease}}
+
+/* Method */
+.method{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.method .card{gap:8px}
+.method .n{font-family:var(--mono);font-size:.75rem;font-weight:600;color:var(--accent);background:var(--accent-soft);width:28px;height:28px;border-radius:50%;display:grid;place-items:center}
+.method b{font-weight:600;font-size:.95rem}
+.method p{font-size:.86rem;color:var(--muted)}
+@media (max-width:1100px){.method{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.method{grid-template-columns:1fr}}
 </style>
 
 <div class="app">
@@ -197,6 +206,7 @@ main{padding-block:28px 48px;padding-left:clamp(16px,3vw,36px);padding-right:max
     </div>
     <nav class="menu" aria-label="Sections">
       <a href="#overview"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg><span data-fr="Vue d'ensemble">Overview</span></a>
+      <a href="#method"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4h10M3 8h10M3 12h6"/></svg><span data-fr="Ma méthode">How I work</span></a>
       <a href="#deal"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12l4-4 3 3 5-6"/></svg><span data-fr="Cas client">Deal room</span></a>
       <a href="#why"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 2"/></svg><span data-fr="Ce que j'apporte">What I bring</span></a>
       <a href="#plan"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M2 8h8M2 12h5"/></svg><span data-fr="Plan 90 jours">90-day plan</span></a>
@@ -254,6 +264,16 @@ main{padding-block:28px 48px;padding-left:clamp(16px,3vw,36px);padding-right:max
         </div>
         <p class="foot" data-fr="personnes : l'agence de Hanoï, partie de presque rien, a grandi avec les comptes que j'ai ouverts">people: the Hanoi branch, built from almost nothing, grew with the accounts I opened</p>
       </div>
+    </section>
+
+    <h2 class="section-t" id="method" data-fr="Ma façon de travailler">How I work</h2>
+    <p class="lead" style="margin-top:-12px" data-fr="Quel que soit le produit, je vends de la même façon : comprendre d'abord, proposer ensuite, puis rester là.">Whatever the product, I sell the same way: understand first, propose second, then stay close.</p>
+    <section class="method">
+      <div class="card"><span class="n">1</span><b data-fr="Comprendre le business">Understand the business</b><p data-fr="Avant de vendre, je comprends comment le client fonctionne, ce qu'il vise et qui décide vraiment.">Before selling, I learn how the client works, what they aim for and who really decides.</p></div>
+      <div class="card"><span class="n">2</span><b data-fr="Trouver le vrai besoin">Find the real need</b><p data-fr="Je pose les bonnes questions et j'écoute plus que je ne parle, pour trouver le problème derrière la demande.">I ask the right questions and listen more than I talk, to find the problem behind the request.</p></div>
+      <div class="card"><span class="n">3</span><b data-fr="Une offre qui compte">Make it relevant</b><p data-fr="Une proposition claire, construite autour de ses objectifs, où la valeur saute aux yeux.">A clear proposal built around their goals, where the value is obvious.</p></div>
+      <div class="card"><span class="n">4</span><b data-fr="Objections et closing">Handle objections &amp; close</b><p data-fr="Je traite les objections franchement et je négocie des accords qui marchent pour les deux parties.">I address concerns head-on and negotiate deals that work for both sides.</p></div>
+      <div class="card"><span class="n">5</span><b data-fr="Rester proche et faire grandir">Stay close &amp; grow</b><p data-fr="Suivi régulier, réponses rapides, présence : le client revient et achète plus.">Regular follow-up, fast answers, being there: clients come back and buy more.</p></div>
     </section>
 
     <h2 class="section-t" id="deal" data-fr="Cas client">Deal room</h2>
